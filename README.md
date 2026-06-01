@@ -1,16 +1,25 @@
 Mopo backend
 ===
 
+Install ethtool if needed
 
-Install ethtool
+```
+usage: mopo.py [-h] -i INTERFACE [-N NSPID] [-E]
 
-Connect monitor ports and edit monitor ports in mopo.py
+options:
+  -h, --help            show this help message and exit
+  -i INTERFACE, --interface INTERFACE
+                        wanted interfaces
+  -N NSPID, --nspid NSPID
+                        namespace pid
+  -E, --use_ethtool     use ethtool instead of /proc
+```
 
 
 LICENSE
 ---
 
-Copyright (c) 2022 Antti Jaakkola
+Copyright (c) 2022-2026 Antti Jaakkola, Ossi Hakkarainen
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
